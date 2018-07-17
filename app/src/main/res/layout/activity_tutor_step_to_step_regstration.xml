@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".TutorMainPage">
+
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="97dp"
+        android:layout_height="73dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@mipmap/ic_app_name" />
+
+    <!--step 1 - verify email-->
+
+    <TextView
+        android:id="@+id/display_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ELPurple"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/step_two_registration"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/register_as_tutor_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_background"
+        android:text="@string/register_as_tutor_btn"
+        android:padding="20dp"
+        android:textColor="@android:color/white"
+        android:onClick="registerAsTutor"/>
+
+
+
+</android.widget.RelativeLayout>
+

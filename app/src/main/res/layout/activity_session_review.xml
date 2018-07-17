@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SessionReview">
+
+    <android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/beginning_text"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/session_review_beginning_text"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tutor_name"
+            android:layout_width="92dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/beginning_text"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:gravity="center"
+            android:text="@string/tutor_name"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/course_name"
+            android:layout_width="92dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/tutor_name"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:gravity="center"
+            android:text="@string/course_name"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/session_type"
+            android:layout_width="92dp"
+            android:layout_height="29dp"
+            android:layout_below="@id/course_name"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/session_type"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="92dp"
+            android:layout_height="29dp"
+            android:layout_below="@id/session_type"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="54dp"
+            android:gravity="center"
+            android:text="@string/topic"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="92dp"
+            android:layout_height="29dp"
+            android:layout_below="@id/topic"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/start_session"
+            android:layout_width="92dp"
+            android:layout_height="29dp"
+            android:layout_below="@id/day"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/start_session"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/end_session"
+            android:layout_width="92dp"
+            android:layout_height="29dp"
+            android:layout_below="@id/start_session"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/end_session"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/tutor_name_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/beginning_text"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@id/tutor_name"
+            android:layout_toRightOf="@id/tutor_name"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/course_name_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/tutor_name_edit"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@id/course_name"
+            android:layout_toRightOf="@id/course_name"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <Spinner
+            android:id="@+id/session_type_dropdown"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/course_name_edit"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@id/session_type"
+            android:layout_toRightOf="@id/session_type"
+            android:background="@drawable/textbox_background"
+            android:entries="@array/session_type_dropdown" />
+
+        <EditText
+            android:id="@+id/topic_edit"
+            android:layout_width="202dp"
+            android:layout_height="74dp"
+            android:layout_below="@id/session_type_dropdown"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@id/topic"
+            android:layout_toRightOf="@id/topic"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:hint="@string/topic_helper_text"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/day_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/topic_edit"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@id/day"
+            android:layout_toRightOf="@id/day"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/start_session_edit"
+            android:layout_width="85dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/day_edit"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@id/start_session"
+            android:layout_toRightOf="@id/start_session"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/end_session_edit"
+            android:layout_width="87dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/start_session_edit"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@id/end_session"
+            android:layout_toRightOf="@id/end_session"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary" />
+
+        <Spinner
+            android:id="@+id/start_session_dropdown_time"
+            android:layout_width="72dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/day_edit"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@id/start_session_edit"
+            android:layout_toRightOf="@id/start_session_edit"
+            android:background="@drawable/textbox_background"
+            android:entries="@array/time_list" />
+
+        <Spinner
+            android:id="@+id/end_session_dropdown_time"
+            android:layout_width="72dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/start_session_dropdown_time"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@id/end_session_edit"
+            android:layout_toRightOf="@id/end_session_edit"
+            android:background="@drawable/textbox_background"
+            android:entries="@array/time_list" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="279dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/end_session"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="54dp"
+            android:background="@drawable/button_background"
+            android:onClick="goToConfirmation"
+            android:text="@string/button_send_request"
+            android:textColor="@android:color/white" />
+
+    </android.widget.RelativeLayout>
+</ScrollView>

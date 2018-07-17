@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterAsTutor">
+
+    <android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.excellassonde.receiveasession.RegisterAsTutor"
+        tools:layout_editor_absoluteY="25dp"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <TextView
+            android:id="@+id/beginning_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:text="@string/register_beginning_Text"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/general_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:text="@string/general_section"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_below="@id/beginning_text"/>
+
+        <TextView
+            android:id="@+id/tutor_name"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/register_tutor_name"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/general_section"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+
+        <EditText
+            android:id="@+id/tutor_name_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/tutor_name_hint"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/tutor_name"
+            android:layout_toEndOf="@id/tutor_name"
+            android:layout_below="@id/general_section"/>
+
+        <TextView
+            android:id="@+id/student_number"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/student_number"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/tutor_name"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+        <EditText
+            android:id="@+id/student_number_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/student_name_hint"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/student_number"
+            android:layout_toEndOf="@id/student_number"
+            android:layout_below="@id/tutor_name_edit"/>
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/phone_number"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/student_number"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+        <EditText
+            android:id="@+id/phoneNumber_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/student_number_edit"
+            android:layout_toRightOf="@+id/phoneNumber"
+            android:layout_toEndOf="@+id/phoneNumber" />
+
+        <TextView
+            android:id="@+id/tutor_email"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/registration_email"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/phoneNumber"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+        <EditText
+            android:id="@+id/tutor_email_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/email_hint"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/phoneNumber_edit"
+            android:layout_toRightOf="@+id/tutor_email"
+            android:layout_toEndOf="@+id/tutor_email" />
+
+        <TextView
+            android:id="@+id/courses"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/registration_course"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/tutor_email"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="35dp"/>
+
+        <EditText
+            android:id="@+id/courses_edit"
+            android:layout_width="202dp"
+            android:layout_height="83dp"
+            android:background="@drawable/textbox_background"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="@string/courses_helper_text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/tutor_email_edit"
+            android:layout_toRightOf="@+id/courses"
+            android:layout_toEndOf="@+id/courses"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/availableHours"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/available_hours"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/courses"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="54dp"/>
+
+
+        <EditText
+            android:id="@+id/availableHours_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:hint="@string/available_hours_hint"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_below="@+id/courses_edit"
+            android:layout_toRightOf="@+id/availableHours"
+            android:layout_toEndOf="@+id/availableHours"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/availability_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/availability"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_below="@id/availableHours"/>
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/availability_section_info"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/availableHours"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginStart="5dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_toRightOf="@id/availability_section"-->
+            <!--app:srcCompat="@mipmap/ic_information"-->
+            <!--android:background="#0000"-->
+            <!--android:layout_above="@+id/times_info"-->
+            <!--android:layout_alignRight="@+id/beginning_text"-->
+            <!--android:layout_alignEnd="@+id/beginning_text" />-->
+
+
+        <TextView
+            android:id="@+id/times_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/times_information"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:layout_below="@id/availability_section"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/monday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/monday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/times_info"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+
+        <EditText
+            android:id="@+id/monday_availability"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/times_info"
+            android:layout_toRightOf="@+id/monday"
+            android:layout_toEndOf="@+id/monday"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/times_hint"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tuesday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/tuesday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/monday"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+        <EditText
+            android:id="@+id/tuesday_availability"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/monday_availability"
+            android:layout_toRightOf="@+id/tuesday"
+            android:layout_toEndOf="@+id/tuesday"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/times_hint"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/wednesday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/tuesday"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:gravity="center"
+            android:text="@string/wednesday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/wednesday_availability"
+            android:layout_width="205dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/tuesday_availability"
+            android:layout_toRightOf="@+id/wednesday"
+            android:layout_toEndOf="@+id/wednesday"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/times_hint"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/thursday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/thursday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/wednesday"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+        <EditText
+            android:id="@+id/thursday_availability"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/wednesday_availability"
+            android:layout_toRightOf="@+id/thursday"
+            android:layout_toEndOf="@+id/thursday"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/times_hint"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/friday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/friday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/thursday"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+        <EditText
+            android:id="@+id/friday_availability"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/thursday_availability"
+            android:layout_toRightOf="@+id/friday"
+            android:layout_toEndOf="@+id/friday"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/times_hint"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/saturday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/saturday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/friday"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+        <EditText
+            android:id="@+id/saturday_availability"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/friday_availability"
+            android:layout_toRightOf="@+id/saturday"
+            android:layout_toEndOf="@+id/saturday"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/times_hint"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/sunday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/sunday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/saturday"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+        <EditText
+            android:id="@+id/sunday_availability"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/saturday_availability"
+            android:layout_toRightOf="@+id/sunday"
+            android:layout_toEndOf="@+id/sunday"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/times_hint"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_centerVertical="true" />
+
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="279dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/sunday"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/button_background"
+            android:onClick="addToTutors"
+            android:text="@string/register"
+            android:textColor="@android:color/white" />
+    </android.widget.RelativeLayout>
+</ScrollView>

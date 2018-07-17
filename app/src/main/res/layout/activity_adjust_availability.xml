@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdjustAvailability"
+    android:id="@+id/adjust_availability">
+
+    <android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="25dp"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <TextView
+            android:id="@+id/adjust_avail_beginning_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:text="@string/ajust_availability_info"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/availableHours"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/available_hours"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/adjust_avail_beginning_text"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+
+        <EditText
+            android:id="@+id/availableHours_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/adjust_avail_beginning_text"
+            android:layout_toRightOf="@+id/availableHours"
+            android:layout_toEndOf="@+id/availableHours"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true" />
+
+
+        <TextView
+            android:id="@+id/monday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/monday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/availableHours"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+
+        <EditText
+            android:id="@+id/monday_availability"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/availableHours_edit"
+            android:layout_toRightOf="@+id/monday"
+            android:layout_toEndOf="@+id/monday"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tuesday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/tuesday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/monday"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+        <EditText
+            android:id="@+id/tuesday_availability"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/monday_availability"
+            android:layout_toRightOf="@+id/tuesday"
+            android:layout_toEndOf="@+id/tuesday"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/wednesday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/tuesday"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:gravity="center"
+            android:text="@string/wednesday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/wednesday_availability"
+            android:layout_width="205dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/tuesday_availability"
+            android:layout_toRightOf="@+id/wednesday"
+            android:layout_toEndOf="@+id/wednesday"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/thursday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/thursday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/wednesday"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+        <EditText
+            android:id="@+id/thursday_availability"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/wednesday_availability"
+            android:layout_toRightOf="@+id/thursday"
+            android:layout_toEndOf="@+id/thursday"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/friday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/friday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/thursday"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+        <EditText
+            android:id="@+id/friday_availability"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/thursday_availability"
+            android:layout_toRightOf="@+id/friday"
+            android:layout_toEndOf="@+id/friday"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/saturday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/saturday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/friday"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+        <EditText
+            android:id="@+id/saturday_availability"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/friday_availability"
+            android:layout_toRightOf="@+id/saturday"
+            android:layout_toEndOf="@+id/saturday"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/sunday"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/sunday"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_below="@id/saturday"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"/>
+
+        <EditText
+            android:id="@+id/sunday_availability"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_below="@+id/saturday_availability"
+            android:layout_toRightOf="@+id/sunday"
+            android:layout_toEndOf="@+id/sunday"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true" />
+
+
+        <Button
+            android:id="@+id/adjust_button"
+            android:layout_width="279dp"
+            android:layout_height="44dp"
+            android:onClick="adjustAvailability"
+            android:background="@drawable/button_background"
+            android:text="@string/adjust_availability"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/sunday"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"/>
+    </android.widget.RelativeLayout>
+</ScrollView>

@@ -1,0 +1,127 @@
+<resources>
+    <!--Tutor login & signup page-->
+    <string name="app_name">ExcelLassonde</string>
+    <string name="email">Yorku Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="button_login">Log In</string>
+    <string name="sign_up_prompt">Don\'t have an account? <b>Sign up</b></string>
+    <string name="button_sign_up">Sign Up</string>
+    <string name="full_name">Full Name</string>
+    <string name="login_prompt">Have an account already? <b>Log in</b></string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!--confirm session Page for Tutor-->
+    <string name="confirm_session_beginning_text">Please confirm the following session</string>
+    <string name="student_name">Student(s):</string>
+    <string name="course_name">Course:</string>
+    <string name="start_session">Starts:</string>
+    <string name="end_session">Ends:</string>
+    <string name="session_type">Type:</string>
+    <string name="topic">Topic(s):</string>
+    <string name="button_confirm_session">Confirm</string>
+    <string name="button_reject_session">Reject</string>
+    <string name="rejection_prompt">Please tell us why you can\'t confirm the session</string>
+
+    <!--register as a tutor-->
+    <string name="register_beginning_Text">Please add the following Information</string>
+    <string name="general_section">General Section</string>
+    <string name="register_tutor_name">Name:</string>
+    <string name="registration_course">Courses:</string>
+    <string name="registration_email">Yorku Email:</string>
+    <string name="courses_helper_text">Please separate courses with a comma</string>
+    <string name="student_number">Student Number:</string>
+    <string name="register">Register</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="available_hours">Available Hours:</string>
+    <string name="available_hours_information">Please put in the maximum hours you are willing to tutor per week. e.g. 5.5</string>
+    <string name="availability">Availability Section</string>
+    <string name="availability_information">Please put in <i>all</i> the times you are free, so that students have more options.
+                                            We will not book you more than the hours you are available in a week</string>
+    <string name="times_information">Put in all times you are free each day, separated by comma. \n e.g. 10:30am-1:00pm, 3:00pm-5:00pm\n If you are not free on a day, please leave the box empty</string>
+    <string name="ajust_availability_info">Add, leave or remove time slots</string>
+    <string name="adjust_availability">Adjust</string>
+    <string name="tutoring_confirmation">You are almost done! Please email your unofficial transcript to excellassonde@gmail.com to verify the courses you have chosen. \n \nFeel free to block out courses you are not tutoring and/or personal information. \n \nPlease note that we cannot allow students to book you until this is done. \n\nThank you for choosing to work with us!</string>
+    <string name="monday">MONDAYS:</string>
+    <string name="tuesday">TUESDAYS:</string>
+    <string name="wednesday">WEDNESDAYS:</string>
+    <string name="thursday">THURSDAYS:</string>
+    <string name="friday">FRIDAYS:</string>
+    <string name="saturday">SATURDAYS:</string>
+    <string name="sunday">SUNDAYS:</string>
+
+    <!--set the hints for registering as a tutor-->
+    <string name="tutor_name_hint">John D.</string>
+    <string name="course_name_hint">EECS 2030, MATH 1090</string>
+    <string name="student_name_hint">111111111</string>
+    <string name="email_hint">john.doe@example.com</string>
+    <string name="available_hours_hint">5.5 per week</string>
+    <string name="times_hint">10:00am-1:00pm, 4:00pm-7:00pm</string>
+
+    <!--tutor's main page-->
+    <string name="display_message_no_sessions">You do not have any sessions to confirm yet.</string>
+    <string name="display_message_sessions">You have %s session(s) to confirm</string>
+    <string name="display_message_not_tutor">You are not a tutor yet. Please send us your transcript.</string>
+    <string name="toolbar_welcome_message">Hello %s!</string>
+    <string name="entered_wrong_email_btn">I entered a wrong email earlier</string>
+    <string name="email_verified_btn">I am verified</string>
+    <string name="alert_not_verified">Nah, you are joking! The link has not been clicked.</string>
+    <string name="step_one_verification">Welcome! Thanks for signing up. Please click on the link sent to your email in order to continue with us.</string>
+    <string name="step_two_registration">NEXT STEP: \n\n \t\tPlease fill out our form, so we can get to know your availabilities and courses.</string>
+    <string name="confirm_session_btn">Confirm Session</string>
+    <string name="register_as_tutor_btn">Register as a tutor</string>
+
+
+    <!--choose course page-->
+    <string name="course_helper_text">Which Course would you like help in?</string>
+    <string name="no_courses_yet">We do not have any courses yet. Please check back later</string>
+    <string name="loading_message">Loading&#8230;</string>
+    <!-- drawer view for tutor -->
+    <string name="drawer_open">open drawer</string>
+    <string name="drawer_close">close drawer</string>
+    <string-array name="menu_options">
+        <item> </item>
+        <item>Adjust your availability</item>
+        <item>Confirm your session(s)</item>
+        <item>Go back to General page</item>
+        <item>Leave Feedback</item>
+        <item>Sign out</item>
+    </string-array>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <!-- student login page -->
+    <string name="email_address">Email</string>
+    <string name="firstName">First Name</string>
+    <string name="button_bookSession">Book A Session</string>
+    <string name="button_leaveReview">Leave A Review</string>
+
+    <!--session review page-->
+    <string name="session_review_beginning_text">Please confirm the following details</string>
+    <string name="group_session_email">Please add the emails of the other students joining the session</string>
+    <string name="hours_notification">Please note that this particular tutor has reached the available hours they are willing to tutor. This session is not guaranteed to be confirmed</string>
+    <string name="tutor_name">Tutor:</string>
+    <string name="day">Day:</string>
+    <string name="topic_helper_text">Please add here the topics you need help with</string>
+    <string name="button_send_request">Send Request</string>
+    <string name="button_back">Back</string>
+    <string-array name="time_list">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+    <string-array name="session_type_dropdown">
+        <item>One-on-One</item>
+        <item>Group</item>
+    </string-array>
+    <string name="tab_monday">MON</string>
+    <string name="tab_tuesday">TUE</string>
+    <string name="tab_wednesday">WED</string>
+    <string name="tab_thursday">THU</string>
+    <string name="tab_friday">FRI</string>
+
+
+    <!--first activity page-->
+    <string name="tutor_button">I AM A TUTOR</string>
+    <string name="student_button">I AM A STUDENT</string>
+    <string name="yorku_email_ending">my.yorku.ca</string>
+</resources>

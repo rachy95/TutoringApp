@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1014035877785",
+    "firebase_url": "https://tutoringapp-3f7ac.firebaseio.com",
+    "project_id": "tutoringapp-3f7ac",
+    "storage_bucket": "tutoringapp-3f7ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014035877785:android:c2079a2d98c6c742",
+        "android_client_info": {
+          "package_name": "com.excellassonde.tutoringapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014035877785-vrccqepl525o6helrn9jsnhhek53nlsa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.excellassonde.tutoringapp",
+            "certificate_hash": "665865044a9428d95c1fe40e868dd9ad6333d954"
+          }
+        },
+        {
+          "client_id": "1014035877785-v5nc4stono3sovekuadjnf5lr09t6cjk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3Ed7xup_WKn_uufXFY4RKDWXM5H-dxGU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014035877785-v5nc4stono3sovekuadjnf5lr09t6cjk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

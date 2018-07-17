@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.excellassonde.tutoringapp.FirstActivity">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="97dp"
+        android:layout_height="73dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@mipmap/ic_app_name" />
+
+    <Button
+        android:id="@+id/tutor_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp"
+        android:background="@drawable/button_background"
+        android:text="@string/tutor_button"
+        android:textColor="@android:color/white"
+        android:onClick="goToTutorLogin"/>
+
+    <Button
+        android:id="@+id/student_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:text="@string/student_button"
+        android:layout_marginTop="102dp"
+        android:layout_below="@id/tutor_button"
+        android:layout_centerHorizontal="true"
+        android:onClick="goToStudentLogin"/>
+</android.widget.RelativeLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmSession"
+    android:id="@+id/confirm_session">
+
+    <android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/beginning_text"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/confirm_session_beginning_text"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_width="92dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/student_name"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_below="@id/beginning_text"/>
+
+        <TextView
+            android:id="@+id/course_name"
+            android:layout_width="92dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/course_name"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_below="@id/student_name"/>
+
+        <TextView
+            android:id="@+id/session_type"
+            android:layout_width="92dp"
+            android:layout_height="29dp"
+            android:gravity="center"
+            android:text="@string/session_type"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/course_name"/>
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="92dp"
+            android:layout_height="29dp"
+            android:gravity="center"
+            android:text="@string/topic"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="54dp"
+            android:layout_below="@id/session_type"/>
+
+        <TextView
+            android:id="@+id/start_session"
+            android:layout_width="92dp"
+            android:layout_height="29dp"
+            android:gravity="center"
+            android:text="@string/start_session"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_below="@id/topic"/>
+
+
+        <TextView
+            android:id="@+id/end_session"
+            android:layout_width="92dp"
+            android:layout_height="29dp"
+            android:gravity="center"
+            android:text="@string/end_session"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/start_session"/>
+
+        <TextView
+            android:id="@+id/student_name_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/student_name"
+            android:layout_toEndOf="@id/student_name"
+            android:layout_below="@id/beginning_text"/>
+
+        <TextView
+            android:id="@+id/course_name_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/course_name"
+            android:layout_toEndOf="@id/course_name"
+            android:layout_below="@id/student_name_edit" />
+
+        <TextView
+            android:id="@+id/session_type_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/session_type"
+            android:layout_toEndOf="@id/session_type"
+            android:layout_below="@id/course_name_edit" />
+
+        <TextView
+            android:id="@+id/topic_edit"
+            android:layout_width="202dp"
+            android:layout_height="74dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:selectAllOnFocus="true"
+            android:textSize="12sp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/topic"
+            android:layout_toEndOf="@id/topic"
+            android:layout_below="@id/session_type_edit"/>
+
+        <TextView
+            android:id="@+id/start_session_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/start_session"
+            android:layout_toEndOf="@id/start_session"
+            android:layout_below="@id/topic_edit"/>
+
+        <TextView
+            android:id="@+id/end_session_edit"
+            android:layout_width="202dp"
+            android:layout_height="44dp"
+            android:background="@drawable/textbox_background"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/end_session"
+            android:layout_toEndOf="@id/end_session"
+            android:layout_below="@id/start_session_edit" />
+
+
+        <Button
+            android:id="@+id/btn_reject"
+            android:layout_width="141dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background"
+            android:text="@string/button_reject_session"
+            android:onClick="rejectSession"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_below="@id/end_session_edit"/>
+
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="141dp"
+            android:layout_height="46dp"
+            android:text="@string/button_confirm_session"
+            android:onClick="confirmSession"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/btn_reject"
+            android:layout_toEndOf="@id/btn_reject"
+            android:layout_below="@id/end_session_edit" />
+
+
+    </android.widget.RelativeLayout>
+</ScrollView>
